@@ -14,7 +14,7 @@ const CreatePostWizard = () => {
   const user = useUser();
   console.log(user);
 
-  if (!user) return null;
+  if (!user || !user.user) return null;
 
   return (
     <div className="flex w-full gap-3 ">
