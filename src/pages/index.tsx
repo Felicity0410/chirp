@@ -52,7 +52,7 @@ const PostView = (props: PostWithUser) => {
             post.createdAt
           ).fromNow()}`}</span>
         </div>
-        <span>{post.content}</span>
+        <span className="text-2xl">{post.content}</span>
       </div>
     </div>
   );
@@ -75,7 +75,7 @@ const Feed = () => {
 };
 
 const Home: NextPage = () => {
-  const {isLoaded: userLoaded, isSignedIn } = useUser();
+  const {isLoaded: userLoaded, isSignedIn} = useUser();
 
   //start fetching asap
   api.posts.getAll.useQuery()
