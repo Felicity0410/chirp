@@ -10,7 +10,7 @@ const config = {
   images: {
     remotePatterns: [
       {
-        hostname: 'images.clerk.dev',
+        hostname: "images.clerk.dev",
       },
     ],
   },
